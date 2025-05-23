@@ -70,6 +70,9 @@ body {
 .logo{
     width: 100%;
     grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .titulo {
