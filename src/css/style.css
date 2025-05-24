@@ -5,7 +5,8 @@
 }
 
 /* Linha para dividir os temas */
-.divisoria { 
+.divisoria {
+    width: 100%;
     border: 2px solid #0d47a1;
     margin: 1em 0;
 }
@@ -17,7 +18,8 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #0d47a1;
+    font-weight: bold;
 }
 
 li {
@@ -125,8 +127,16 @@ nav.menu a:hover {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.principal, .servicos, .sobre, .aulas, .contato {
+.principal {
     margin-bottom: 2em;
+}
+
+#servicos, #sobre, #aulas, #contato {
+    padding: 0 1em;
+}
+
+#sobre {
+    text-indent: 1em;
 }
 
 #contato {
@@ -135,16 +145,27 @@ nav.menu a:hover {
     border-radius: 10px;
 }
 
+.contato-whatsapp {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
 
 .botao-whats {
-    display: inline-block;
-    margin: 10px 0 0 30px;
+    height: 100%;
+    font-size: .8em;
+    margin-left: 1.5em;
     background-color: #25d366;
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
 }
 
 
@@ -157,6 +178,7 @@ nav.menu a:hover {
 }
 
 .email {
+    margin-top: 1.2em;
     color: #00325b;
 }
 
@@ -173,6 +195,7 @@ nav.menu a:hover {
     font-size: 0.9em;
     border-radius: 0 0 10px 10px;
 }
+
 
 /* Mobile */
 
@@ -227,6 +250,23 @@ nav.menu a:hover {
     ul li {
         padding: .3em;
     }
+    
+    .contato-whatsapp {
+        font-size: 1.5em;
+        flex-direction: column;
+        gap: 0.5em;
+        font-weight: bold;
+        margin: 10px auto;
+    }
+
+    .contato-whatsapp a {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .botao-whats {
+        margin: 0;
+    }
  
 }
 
@@ -235,6 +275,7 @@ nav.menu a:hover {
 @media (min-width: 530px) and (max-width: 767px) {
     .cabecalho {
         text-align: center;
+        padding-top: 1.5em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -267,9 +308,25 @@ nav.menu a:hover {
     }
 
     .informe p {
-        font-size: 1.1em;
+        font-size: .6em;
         margin-bottom: 0.5em;
     }
+
+    .contato-whatsapp {
+        flex-direction: column;
+        gap: 0.5em;
+        font-weight: bold;
+        margin: 10px auto;
+    }
+
+    .contato-whatsapp a {
+        font-size: 1.5em;
+    }
+
+    .botao-whats {
+        margin: 0;
+    }
+
 }
 /* Small tablets */
 
