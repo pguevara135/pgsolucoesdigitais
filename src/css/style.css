@@ -49,14 +49,14 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1em;
+    padding: .8em;
     background-color: #f6f4ed;
 }
 
 .cabecalho {
     background-color: #0d47a1;
     color: white;
-    padding: 1em;
+    padding: .8em;
     text-align: center;
     border-radius: 10px 10px 0 0;
     display: grid;
@@ -78,6 +78,7 @@ body {
 }
 
 .titulo {
+    width: 100%;
     margin: 0.7em auto;
     grid-area: titulo;
 }
@@ -93,6 +94,8 @@ body {
 }
 
 .informe {
+    width: 100%;
+    text-align: center;
     font-size: 1.5em;
     margin-bottom: 0.5em;
     grid-area: informe;
@@ -147,8 +150,19 @@ nav.menu a:hover {
 
 .contato-whatsapp {
     font-size: 1em;
+    margin-top: 1em;
+    font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+#aulas > .contato-whatsapp {
+    justify-content: left;
+}
+
+#contato > .contato-whatsapp {
+    justify-content: left;
 }
 
 
@@ -224,11 +238,11 @@ nav.menu a:hover {
     }
 
     .titulo {
-        margin: 15px auto;
+        margin: 0;
     }
 
     .titulo h1 {
-        font-size: 2em;
+        font-size: 1.8em;
         margin: 0.5em auto;
     }
 
@@ -252,7 +266,7 @@ nav.menu a:hover {
     }
     
     .contato-whatsapp {
-        font-size: 1.5em;
+        font-size: 1em;
         flex-direction: column;
         gap: 0.5em;
         font-weight: bold;
@@ -261,12 +275,13 @@ nav.menu a:hover {
 
     .contato-whatsapp a {
         width: 100%;
-        font-size: 1em;
+        font-size: .8em;
     }
 
     .botao-whats {
         margin: 0;
     }
+
  
 }
 
@@ -305,6 +320,9 @@ nav.menu a:hover {
     .titulo h6 {
         font-size: 1.3em;
         margin-bottom: 1em;
+    }
+    .informe {
+        padding: 0;
     }
 
     .informe p {
@@ -347,7 +365,12 @@ nav.menu a:hover {
 
     .logo {
         width: 100%;
+        height: 100%;
         grid-area: logo;
+    }
+
+    .logo h2 {
+        font-size: 1.2em;
     }
 
     .titulo {
