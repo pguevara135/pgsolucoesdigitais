@@ -62,7 +62,7 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "logo titulo"
-        "informe informe";
+        "logo informe";
     justify-content: center;
     align-items: center;
 }
@@ -76,9 +76,18 @@ body {
 }
 
 .titulo {
-    font-size: 2.5em;
     margin: 0.7em auto;
     grid-area: titulo;
+}
+
+.titulo h1 {
+    font-size: 4.5em;
+    margin: 0.5em auto;
+}
+
+.titulo h6 {
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 .informe {
@@ -167,7 +176,7 @@ nav.menu a:hover {
 
 /* Mobile */
 
-@media (max-width: 481px) {
+@media (max-width: 530px) { /* 481*/
    .cabecalho {
         text-align: center;
         display: flex;
@@ -178,12 +187,31 @@ nav.menu a:hover {
     }
 
     .logo {
-        width: 30%;
+        width: 100%;
+    }
+
+    .banner {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .logo h2 {
+        font-size: 1em;
+        margin: 0.5em auto;
     }
 
     .titulo {
-        font-size: 1.2em;
         margin: 15px auto;
+    }
+
+    .titulo h1 {
+        font-size: 2em;
+        margin: 0.5em auto;
+    }
+
+    .titulo h6 {
+        font-size: 1em;
+        margin-bottom: 1em;
     }
 
     .informe p {
@@ -204,7 +232,7 @@ nav.menu a:hover {
 
 /* Extra small devices */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 530px) and (max-width: 767px) {
     .cabecalho {
         text-align: center;
         display: flex;
@@ -215,12 +243,27 @@ nav.menu a:hover {
     }
 
     .logo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner {
         width: 40%;
+        margin: 0 auto;
     }
     
     .titulo {
-        font-size: 1.5em;
         margin: 15px auto;
+    }
+
+    .titulo h1 {
+        font-size: 2.5em;
+        margin: 0.5em auto;
+    }
+
+    .titulo h6 {
+        font-size: 1.3em;
+        margin-bottom: 1em;
     }
 
     .informe p {
@@ -239,7 +282,7 @@ nav.menu a:hover {
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "logo titulo"
-            "informe informe";  
+            "logo informe";  
         justify-content: center;
         align-items: center;
         border-radius: 10px 10px 0 0;
@@ -251,9 +294,18 @@ nav.menu a:hover {
     }
 
     .titulo {
-        font-size: 2em;
         margin: 15px auto;
         grid-area: titulo;
+    }
+
+    .titulo h1 {
+        font-size: 2.5em;
+        margin: 0.5em auto;
+    }
+
+    .titulo h6 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
     }
 
     .informe {
@@ -266,7 +318,15 @@ nav.menu a:hover {
 /* Large tablets/laptops */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+    .titulo h1 {
+        font-size: 3em;
+        margin: 0.5em auto;
+    }
+
+    .titulo h6 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
 }
 
 /* Desktop */
