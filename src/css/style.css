@@ -134,6 +134,26 @@ nav.menu a:hover {
     margin-bottom: 2em;
 }
 
+.inserir {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/* .imagem-inserir {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagem-inserir figcaption {
+    text-align: center;
+    font-size: 0.8em;
+    color: #00325b;
+    margin-top: 0.5em;
+} */
+
 #servicos, #sobre, #aulas, #contato {
     padding: 0 1em;
 }
