@@ -11,6 +11,15 @@
     margin: 1em 0;
 }
 
+body {
+    font-family: 'open-sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -114,18 +123,23 @@ nav.menu {
     background-color: #1976d2;
     text-align: center;
     font-weight: bold;
+    box-sizing: border-box;
     padding: 0.5em;
 }
 
 nav.menu a {
+    height: 100%;
+    font-family: poppins, sans-serif;
     color: white;
-    padding: 0.5em 1em;
+    padding: 1em;
     font-weight: bold;
 }
 
 nav.menu a:hover {
     background-color: #0d47a1;
     text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
     transform: scale(1.2);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -202,6 +216,7 @@ nav.menu a:hover {
 
 .botao-whats {
     height: 100%;
+    font-family: poppins, sans-serif;
     font-size: .8em;
     margin-left: 1.5em;
     background-color: #25d366;
@@ -225,6 +240,16 @@ nav.menu a:hover {
     
 }
 
+.cta-button {
+    font-size: 2em;
+    padding: .5em;
+    margin: auto;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
 .email {
     margin-top: 1.2em;
     color: #00325b;
@@ -243,6 +268,28 @@ nav.menu a:hover {
     font-size: 0.9em;
     border-radius: 0 0 10px 10px;
 }
+
+.redes-sociais {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.rede-social {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.rede-social a {
+    font-family: ;
+    color: white;
+    font-weight: bold;
+}   
 
 
 /* Mobile */
