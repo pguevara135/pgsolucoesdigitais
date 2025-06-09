@@ -7,3 +7,43 @@ colors:
  #00325b
  #f6f4ed
 
+<style>
+    #popupAviso {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: none;
+    }
+    #popupAviso button {
+        background: #ff5e5e;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    #popupAviso button:hover {
+        background: #d9534f;
+    }
+</style>
+
+<div id="popupAviso">
+    <p>🚫 Este site não utiliza cookies! 😊</p>
+    <button onclick="document.getElementById('popupAviso').style.display='none'">Entendi</button>
+</div>
+
+<script>
+    if (!localStorage.getItem("avisoExibido")) {
+        document.getElementById("popupAviso").style.display = "block";
+        localStorage.setItem("avisoExibido", "true");
+    }
+</script>
