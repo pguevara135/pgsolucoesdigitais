@@ -290,7 +290,64 @@ nav.menu a:hover {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: bold;
-}   
+}
+
+#cookieBanner {
+    position: fixed;
+    bottom: 10px;
+    margin: auto;
+    width: 60%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#cookieBanner button {
+    background-color: #f1f1f1;
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+#cookieBanner button:hover {
+    color: white;
+    background-color: #a19292;
+}
+
+/* 
+#cookieBanner {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+      z-index: 1000;
+    }
+
+    #cookieBanner button {
+      background-color: #f1f1f1;
+      border: none;
+      color: #333;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+
+    #cookieBanner button:hover {
+      background-color: #ddd;
+    }
+*/
 
 
 /* Mobile */
