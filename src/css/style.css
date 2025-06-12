@@ -294,7 +294,7 @@ nav.menu a:hover {
 
 #cookieBanner {
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     margin: auto;
     width: 60%;
     background-color: #333;

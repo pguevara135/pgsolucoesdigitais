@@ -1,12 +1,12 @@
 setTimeout(function() {
     location.reload();
-}, 1000 * 60 * 5); // Refresh every 5 minutes
+}, 12000000); // Refresh every 20 minutes
 
 
 // Functio para fechar o banner de cookies
 function fecharBanner() {
       document.getElementById('cookieBanner').style.display = 'none';
-      localStorage.setItem('cookieAvisoExibido', 'true');
+      localStorage.setItem('cookieAvisoExibido', 'sim');
     }
 
     window.onload = function() {
