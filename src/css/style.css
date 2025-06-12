@@ -304,6 +304,7 @@ nav.menu a:hover {
     font-size: 16px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    display: none;
 }
 
 #cookieBanner button {
