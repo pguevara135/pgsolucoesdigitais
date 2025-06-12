@@ -6,7 +6,7 @@ setTimeout(function() {
 // Functio para fechar o banner de cookies
 function fecharBanner() {
       document.getElementById('cookieBanner').style.display = 'none';
-      localStorage.setItem('cookieAvisoExibido', 'sim');
+      localStorage.setItem('cookieAvisoExibido',  'true');
     };
 
 window.onload = function() {
