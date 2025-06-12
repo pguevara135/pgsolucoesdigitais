@@ -7,10 +7,10 @@ setTimeout(function() {
 function fecharBanner() {
       document.getElementById('cookieBanner').style.display = 'none';
       localStorage.setItem('cookieAvisoExibido', 'sim');
-    }
+    };
 
-    window.onload = function() {
-        if (!localStorage.getItem('cookieAvisoExibido')) {
-            document.getElementById('cookieBanner').style.display = 'block';
-        }
+window.onload = function() {
+      if (!localStorage.getItem('cookieAvisoExibido')) {
+        document.getElementById('cookieBanner').style.display = 'block';
+      }
     };
