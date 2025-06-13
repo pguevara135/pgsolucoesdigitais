@@ -1,2 +1,3 @@
-User-agent: bingbot
-Disallow:
+User-agent: *
+Allow: /
+Sitemap: https://www.pgsolucoesdigitais.com.br/sitemap.xml
