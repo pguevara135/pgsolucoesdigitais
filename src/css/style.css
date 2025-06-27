@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6, a {
 
 }
 
+p {
+    font-size: 1.2em;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -38,7 +42,35 @@ a {
 
 li {
     list-style: none;
+    font-size: 1.2em;
 }
+
+.botao-whats {
+    height: 100%;
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
+    margin-left: 1.5em;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+
+.botao-whats:hover {
+    background-color: #0f6d33;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    
+}
+
 
 .top {
     text-align: right;
@@ -58,6 +90,7 @@ h2 {
     padding: .8em;
     background-color: #f6f4ed;
     border-radius: 1rem;
+    position: relative;
 }
 
 .cabecalho {
@@ -88,6 +121,7 @@ h2 {
 
 .titulo h1 {
     font-size: 4.5em;
+    text-shadow: 3px 2px 4px rgba(255, 255, 0, 0.5);
 }
 
 .titulo h6 {
@@ -116,6 +150,14 @@ h2 {
 
 .solucoes {
     font-style: italic;
+    font-weight: 600;
+}
+
+.telefoneWhatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav.menu {
@@ -172,6 +214,11 @@ nav.menu a:hover {
     padding: 0 1em;
 }
 
+.btn-servicos {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
 #sobre {
     text-indent: 1em;
 }
@@ -204,13 +251,6 @@ nav.menu a:hover {
     justify-content: space-evenly;
 }
 
-.telefoneWhatsapp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .qrcode {
     display: flex;
     flex-direction: row;
@@ -236,33 +276,6 @@ nav.menu a:hover {
     justify-content: left;
 }
 
-
-.botao-whats {
-    height: 100%;
-    font-family: poppins, sans-serif;
-    font-size: 1rem;
-    margin-left: 1.5em;
-    background-color: #25d366;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-}
-
-
-
-.botao-whats:hover {
-    background-color: #0f6d33;
-    transform: scale(1.05);
-    transition: transform 0.2s;
-    
-}
-
 .cta-button {
     font-size: 2em;
     padding: .5em;
@@ -285,6 +298,7 @@ nav.menu a:hover {
 .email a {
     color: #0d47a1;
     font-weight: bold;
+    margin-left: .5em;
 }
 
 .rodape {
@@ -352,10 +366,32 @@ nav.menu a:hover {
     background-color: #a19292;
 }
 
+.whats-float {
+    position: fixed;
+    bottom: 20px;
+    right: calc((100% - 1200px) / 2 + 20px);
+    z-index: 999;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whats-float:hover {
+    transform: scale(1.5);
+}
+
 
 /*!! Mobile */
 
 @media (max-width: 530px) { /* 481*/
+    body {
+        padding: 0.5em;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
    .cabecalho {
         text-align: center;
         display: flex;
@@ -406,6 +442,14 @@ nav.menu a:hover {
     ul li {
         padding: .3em;
     }
+
+    .email {
+        font-size: 1em;
+    }
+    
+    .email a {
+        font-size: 0.7em;
+    }
     
     .contato-whatsapp {
         font-size: 1em;
@@ -431,6 +475,12 @@ nav.menu a:hover {
 
     .btn_maior, .btn_maior a{
     font-size: 1.5rem;
+    }
+
+    .whats-float {
+        right: 0.5em;
+        bottom: 1em;
+        width: 50px;
     }
 }
 
@@ -479,6 +529,10 @@ nav.menu a:hover {
         margin-bottom: 0.5em;
     }
 
+    .telefoneWhatsapp p {
+        font-size: 1.2em;
+    }
+
     .contato-whatsapp {
         flex-direction: column;
         gap: 0.5em;
@@ -496,7 +550,18 @@ nav.menu a:hover {
 
     .btn_maior, .btn_maior a{
     font-size: 1.5rem;
-}
+    }
+
+    .whats-float {
+        right: 20px;
+        bottom: 10px;
+    }
+
+    .telefoneWhatsapp a {
+        font-size: .8em;
+        padding: .5em;
+
+    }
 
 }
 /* Small tablets */
@@ -562,6 +627,10 @@ nav.menu a:hover {
         font-size: 1.3em;
     }
 
+    .telefoneWhatsapp p {
+        font-size: .9em;
+    }
+
     .botao-whats {
         height: 100%;
         font-family: poppins, sans-serif;
@@ -572,7 +641,17 @@ nav.menu a:hover {
     }
 
     .qrcode {
-        gap: 0;
+        margin: 0;
+        padding: 0;
+        gap: .7em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .qrcode img {
+        width: 50%;
+        margin: 0 auto;
     }
 
     .qrcode p {
@@ -583,6 +662,14 @@ nav.menu a:hover {
     .btn_maior, .btn_maior a{
     font-size: 1.7rem;
 }
+    .whats-float {
+        right: 20px;
+    }
+
+    .telefoneWhatsapp a {
+        font-size: .8em;
+        padding: 0.5em;
+    }
 }
 
 /* Large tablets/laptops */
@@ -596,6 +683,14 @@ nav.menu a:hover {
     .titulo h6 {
         font-size: 1.5em;
         margin-bottom: 1em;
+    }
+
+    .whats-float {
+        right: 20px;
+    }
+
+    .telefoneWhatsapp p {
+        font-size: .9em;
     }
 }
 
