@@ -68,10 +68,10 @@ h2 {
     border-radius: 10px 10px 0 0;
     display: grid;
     grid-template-columns: 1fr 85%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas:
         "logo titulo"
-        "logo informe";
+        "tec informe";
     justify-content: center;
     align-items: center;
 }
@@ -79,39 +79,40 @@ h2 {
 .logo{
     width: 100%;
     grid-area: logo;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    align-items: center;
 }
 
 .titulo {
     width: 100%;
-    margin: 0.7em auto;
     grid-area: titulo;
 }
 
 .titulo h1 {
     font-size: 4.5em;
-    margin: 0.5em auto;
 }
 
 .titulo h6 {
     font-size: 2em;
-    margin-bottom: 1em;
+}
+
+.tecnologiaAcessivel {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    grid-area: tec;
 }
 
 .informe {
     width: 100%;
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 0.5em;
     grid-area: informe;
 }
 
 .informe p {
     margin-bottom: 0.5em;
 }
+
+
 
 .solucoes {
     font-style: italic;
@@ -197,12 +198,33 @@ nav.menu a:hover {
 
 .contato-whatsapp {
     font-size: 1em;
-    margin-top: 1em;
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.telefoneWhatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.qrcode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    margin-left: 1em;
+}
+
+.qrcode img {
+    width: 20%;
+}
+
+.qrcode p{
+    font-size: 1rem;
 }
 
 #aulas > .contato-whatsapp {
