@@ -68,6 +68,9 @@ li {
 
 h2 {
     margin: 1em 0;
+    color: #093983;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .contato-whatsapp {
@@ -78,12 +81,16 @@ h2 {
     align-items: center;
     justify-content: center;
 }
+
+section {
+    margin-bottom: 3em;
+}
  
 .container {
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    padding: .8em;
+    padding: 2em;
     background-color: #f6f4ed;
     border-radius: 1rem;
     position: relative;
@@ -286,6 +293,7 @@ nav.menu a:hover {
     font-size: 2em;
     padding: .5em;
     margin: auto;
+    color: yellow;
 }
 
 .cta-button:hover {
