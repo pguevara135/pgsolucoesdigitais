@@ -138,6 +138,11 @@ section {
     text-align: center;
     font-size: 1.2em;
     grid-area: tech;
+    color: #f6f4ed;
+}
+
+.tech h2 {
+    color: white;
 }
 
 .informe {
