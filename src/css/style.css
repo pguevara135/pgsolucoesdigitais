@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6, a {
 
 }
 
+p {
+    font-weight: 500;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -57,6 +61,8 @@ a {
 
 li {
     list-style: none;
+    color: #00325b;
+    font-weight: 500;
 }
 
 .top {
@@ -138,6 +144,10 @@ section {
     text-align: center;
     font-size: 1.2em;
     grid-area: tech;
+}
+
+.tech h2 {
+    color: #f1f1f1;
 }
 
 .informe {
@@ -509,6 +519,9 @@ nav.menu a:hover {
 /* Extra small devices */
 
 @media (min-width: 530px) and (max-width: 767px) {
+    .top {
+        margin: 1em;
+    }
     .cabecalho {
         text-align: center;
         padding-top: 1.5em;
@@ -552,7 +565,7 @@ nav.menu a:hover {
     }
 
     .contato-whatsapp {
-        font-size: 1.5em;
+        font-size: 1em;
         flex-direction: column;
         gap: 0.5em;
         font-weight: bold;
