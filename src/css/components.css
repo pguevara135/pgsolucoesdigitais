@@ -18,6 +18,8 @@
     transform: scale(1.1);
 }
 
+/* ! botao de configuracao do whatsapp */
+
 .contato-whatsapp {
     font-size: 1em;
     margin-top: 1em;
@@ -26,6 +28,8 @@
     align-items: center;
     justify-content: center;
 }
+
+/* ! Inicio do corpo */
 
 section {
     margin-bottom: 3em;
@@ -40,6 +44,8 @@ section {
     border-radius: 1rem;
     position: relative;
 }
+
+/* ? Header do site */
 
 .cabecalho {
     background-color: #0d47a1;
