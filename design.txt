@@ -47,3 +47,38 @@ colors:
         localStorage.setItem("avisoExibido", "true");
     }
 </script>
+
+🎨 base.css ou style.css
+Coloque aqui os estilos globais que se aplicam à maioria dos elementos:
+- body, h1-h6, p, li, a, img, section, .divisoria, .container
+- Tipografia, cores, espaçamentos padrão
+- Tudo que ajuda a definir o visual base do site
+
+🧩 components.css
+Aqui você pode incluir estilos específicos de componentes reutilizáveis:
+- .whatsapp-float
+- .contato-whatsapp
+- .cabecalho, .logo, .titulo, .tech, .informe, .telefoneWhatsapp, .qrcode, .qrcode-img
+- .top, .solucoes
+Esses estilos são específicos de blocos funcionais da sua página e podem ficar isolados para facilitar reuso ou mudanças futuras.
+
+📱 media.css
+Você ainda não colou os trechos com media queries, mas quando aparecerem, esse será o lugar ideal para guardar os ajustes responsivos. Isso deixa o style.css mais limpo e facilita testes por breakpoint.
+
+🧩 components.css
+Esses estilos são de elementos específicos e funcionais do layout. Coloque aqui:
+- .qrcode-img, .acessoqrcode
+- .whatsapp-float, .contato-whatsapp, .botao-whats, .cta-button, .btn_maior
+- .inserir, .inserir-title
+- .email, .email a, .rodape, .redes-sociais, .rede-social, .rede-social a
+- #cookieBanner, #cookieBanner button, #cookieBanner button:hover
+- .principal, .cabecalho, .titulo, .logo, .tech, .informe, .telefoneWhatsapp, .qrcode
+
+🧭 style.css ou base.css
+Aqui ficam os elementos estruturais e de layout geral:
+- nav.menu, nav.menu a, nav.menu a:hover
+- #servicos, #sobre, #aulas, #contato
+- Estilização de section, h2, p, li, img, a, body, .container
+
+🖼️ media.css (quando chegar)
+Tudo que for @media ou ajuste de responsividade deve ser isolado aqui para facilitar testes entre dispositivos.
