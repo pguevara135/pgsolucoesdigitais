@@ -54,3 +54,9 @@ h2 {
     margin: 1em 0;
 }
 
+.pages-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #093983;
+    margin-top: 1em;
+}
