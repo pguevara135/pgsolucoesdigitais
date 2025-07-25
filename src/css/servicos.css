@@ -25,6 +25,7 @@ ul {
 
 .servicos-paragrafo {
     text-indent: 1em;
+    text-align: justify;
     margin: 1rem 0;
     font-size: 1.1em;
     line-height: 1.5;
@@ -51,4 +52,11 @@ ul {
 
 #contato {
     margin: 0;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }

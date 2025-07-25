@@ -107,6 +107,11 @@
     .rede-sociais {
         font-size: .7em;
     }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 /* Extra small devices */
@@ -202,7 +207,12 @@
 
     .btn_maior, .btn_maior a{
     font-size: 1.5rem;
-}
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
 
 }
 /* Small tablets */
@@ -250,10 +260,18 @@
         margin-bottom: 1em;
     }
 
+    .tech h2{
+        padding: 0 .5em;
+    }
+
     .informe {
         font-size: 1.2em;
         margin-bottom: 0.5em;
         grid-area: informe;
+    }
+    
+    .solucoes {
+        margin: auto;
     }
     
     .btn_maior, .btn_maior a{
@@ -277,6 +295,11 @@
     .inserir-title {
         font-size: 1.5em;
         font-weight: 700;
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
     }
 }
 
