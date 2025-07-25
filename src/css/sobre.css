@@ -12,12 +12,12 @@ ul {
     margin-bottom: 1rem;
 }
 
-.servicos-table {
+.sobre-table {
     list-style: square;
     margin-bottom: 0.5rem;
 }
 
-.servicos-paragrafo {
+.sobre-paragrafo {
     text-indent: 1em;
     text-align: justify;
     margin: 1rem 0;
@@ -28,6 +28,10 @@ ul {
 .agendar-atendimento {
     font-size: 1.2em;
     margin: 1rem 0;
+}
+
+.sobre-top {
+    padding: 1em 0;
 }
 
 .btn_maior {
