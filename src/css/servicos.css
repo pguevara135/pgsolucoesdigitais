@@ -31,24 +31,6 @@ ul {
     margin: 1rem 0;
 }
 
-.btn_maior {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    margin-bottom: 3rem;
-}
-
-.botao-whats {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-#contato {
-    margin: 0;
-}
-
 .whatsapp-float img {
     width: 60px;
     height: 60px;

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="src/css/components.css"> <!-- ? Link para os botoes, containers -->
     <link rel="stylesheet" href="src/css/media.css"> <!-- ? Link para o estilo responsivo -->
     <link rel="stylesheet" href="src/css/servicos.css"> <!-- ? Link para o estilo específico de serviços -->
+    <link rel="stylesheet" href="src/css/contato.css"> <!-- ? Link para o estilo específico de contato -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="google-site-verification" content="SiHdOJT2DLLsJXpaYopB7Ze08cYLg-wGq9l2daYMEbU" />
     <script type="application/ld+jason">
@@ -86,7 +87,7 @@
             </div>
                 <div class="qrcode">
                     <img src="src/imagem/qrcode (1).png" alt="qrcode para contato no WhatsApp" class="qrcode-img">
-                    <p class="acessoqrcode">Acesse o WhatsApp com seu celular</p>
+                    <p class="acessoqrcode">Acesse o WhatsApp pelo seu celular</p>
                 </div>
         
         </header>
@@ -176,13 +177,17 @@
             <!-- ! Seccao Contato -->
 
             <section id="contato">
+
                 <h2 class="agendar-atendimento">📅 Agendar Atendimento Fale Comigo</h2>
-                <p class="contato-whatsapp btn_maior">📞 WhatsApp: 
-                    <a href="https://wa.me/5511993524116" target="_blank" class="botao-whats">
+
+                <div class="btn_maior whats-contato">
+                <a href="https://wa.me/5511993524116" target="_blank" class="whatsapp-fone cor-whatsapp">📞 WhatsApp:</a> 
+                    <a href="https://wa.me/5511993524116" target="_blank" class="contato-botao-whats">
                         <img src="src/imagem/whats1.png" alt="icone do WhatsApp">
                         (19) 9 9352 - 4116
                     </a>
-                </p>
+                </div>
+                
                 <p class="email">Email: <a href="mailto:contato@pgsolucoesdigitais.com.br">contato@pgsolucoesdigitais.com.br</a></p>
                 <div class="top">
                     <a href="#topo">Voltar ao topo</a>
@@ -192,8 +197,9 @@
             <!-- ! Botao Flutuante do Whatsapp -->
 
             <div class="whatsapp-float">
-                <a href="https://wa.me/5519993524116" target="_blank" class="">
-                    <img src="src/imagem/whats1.png" alt="icone do WhatsApp" title="WhatsApp">
+                <a href="https://wa.me/5519993524116" target="_blank" class="link-float">
+                    <span>👇 Acesse</span>
+                    <i class="fa-brands fa-whatsapp fa-4x" title="WhatsApp"></i>
                 </a>
             </div>
         </main>

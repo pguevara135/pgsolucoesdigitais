@@ -1,8 +1,20 @@
+:root {
+    --whatsapp-color: #25D366;
+    --whatsapp-hover: #0f6d33;
+    --text-wite: #f6f4ed;
+    --azul-principal: #165d96;    /* Azul médio, ideal para títulos ou cabeçalho */
+    --azul-hover: #1765a3;        /* Um pouquinho mais vibrante, ótimo para hover */
+    --azul-claro: #3482bd;        /* Azul claro, ideal para fundos ou destaques */
+    --azul-escuro: #00325b;       /* Azul profundo, ótimo para rodapés ou contrastes */
+    --azul-divisoria: #0d47a1;    /* Azul para divisórias, mais escuro e marcante */
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    background-color: #1765a3;
-    color: #00325b;
+    background-color: var(--azul-claro);
+    /* color: #00325b; */
+    color: var(--azul-principal);
     padding: 1em;
 }
 
@@ -55,7 +67,7 @@ h2 {
 
 .divisoria {
     width: 100%;
-    border: 2px solid #0d47a1;
+    border: 2px solid var(--azul-divisoria);
     margin: 1em 0;
 }
 

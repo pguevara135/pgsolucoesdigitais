@@ -123,15 +123,26 @@ label {
 }
 
 .whats-contato .whatsapp-fone {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bolder;
 }
 
+.whatsapp-fone {
+    padding: 0.1em 1em;
+    cursor: pointer;
+}
+
+.whatsapp-fone:hover {
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+    transform: scale(1.05);
+}
+
 .whats-contato .contato-botao-whats {
-    background-color: #25d366;
+    background-color: var(--whatsapp-color);
     color: white;
     font-size: 1em;
-    padding: .5em;
+    padding: .5em 1em;
     border-radius: .8em;
     display: flex;
     align-items: center;
@@ -140,6 +151,13 @@ label {
 .whats-contato img {
     width: 1.2em;
     height: 1.2em;
+    margin-right: 0.6em;
+}
+
+.contato-botao-whats:hover {
+    background-color: var(--whatsapp-hover);
+    cursor: pointer;
+    transform: translate(0, -3px);
 }
 
 /* ? MOTIVOS PARA CONTATO */
