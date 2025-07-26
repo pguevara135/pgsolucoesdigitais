@@ -1,0 +1,355 @@
+
+/*! Mobile */
+
+/* ? ===== Mobile: ate 530px ===== */
+
+@media (max-width: 530px) { /* 481*/
+   .cabecalho {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .banner {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .logo h2 {
+        font-size: 1em;
+        margin: 0.5em auto;
+    }
+
+    .titulo {
+        margin: 0;
+    }
+
+    .titulo h1 {
+        font-size: 1.8em;
+        margin: 0.5em auto;
+    }
+
+    .titulo h6 {
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+
+    .informe p {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .servicos {
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    .telefoneWhatsapp {
+        font-size: 1.2em;
+    }
+
+    ul li {
+        padding: .3em;
+    }
+    
+    .contato-whatsapp {
+        font-size: 1em;
+        flex-direction: column;
+        gap: 0.5em;
+        font-weight: bold;
+        margin: 10px auto;
+    }
+
+    .contato-whatsapp a {
+        width: 100%;
+        font-size: .8em;
+    }
+
+    .telefoneWhatsapp {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .qrcode {
+        flex-direction: column;
+        padding: 0 1em;
+    }
+
+    .inserir {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .inserir-title {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .botao-whats {
+        margin: 0;
+    }
+
+    .btn_maior, .btn_maior a{
+    font-size: 1.5rem;
+    }
+
+    .email {
+        font-size: .8em;
+        font-weight: 500;
+        margin: 1em auto;
+    }
+
+    .rede-sociais {
+        font-size: .7em;
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Extra small devices */
+
+/*? ====== Tablets Pequenos: 530px a 767px ====== */
+
+@media (min-width: 530px) and (max-width: 767px) {
+    .top {
+        margin: 1em;
+    }
+    .cabecalho {
+        text-align: center;
+        padding-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .titulo {
+        margin: 15px auto;
+    }
+
+    .titulo h1 {
+        font-size: 2.5em;
+        margin: 0.5em auto;
+    }
+
+    .titulo h6 {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+    .informe {
+        padding: 0;
+    }
+
+    .informe p {
+        font-size: .6em;
+        margin-bottom: 0.5em;
+    }
+
+    .contato-whatsapp {
+        font-size: 1em;
+        flex-direction: column;
+        gap: 0.5em;
+        font-weight: bold;
+        margin: 10px auto;
+    }
+
+    .telefoneWhatsapp {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .qrcode {
+        flex-direction: column;
+        padding: 0 1em;
+    }
+
+    .inserir-title {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .inserir {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .inserir-title {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .contato-whatsapp a {
+        font-size: 1.5em;
+    }
+
+    .botao-whats {
+        margin: 0;
+    }
+
+    .btn_maior, .btn_maior a{
+    font-size: 1.5rem;
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+/* Small tablets */
+
+/*? ====== Tablets Médios: 768px a 991px ====== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .cabecalho {
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo titulo titulo"
+            "tech informe informe"
+            "tech contatowp qrcode";  
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .logo {
+        width: 100%;
+        height: 100%;
+        grid-area: logo;
+    }
+
+    .logo h2 {
+        font-size: 1.2em;
+    }
+
+    .titulo {
+        margin: 15px auto;
+        grid-area: titulo;
+    }
+
+    .titulo h1 {
+        font-size: 2.5em;
+        margin: 0.5em auto;
+    }
+
+    .titulo h6 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .tech h2{
+        padding: 0 .5em;
+    }
+
+    .informe {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        grid-area: informe;
+    }
+    
+    .solucoes {
+        margin: auto;
+    }
+    
+    .btn_maior, .btn_maior a{
+    font-size: 1.7rem;
+    }
+
+    .telefoneWhatsapp {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .qrcode {
+        flex-direction: column;
+        padding: 0 1em;
+    }
+
+    .acessoqrcode {
+        font-size: .8em;
+    }
+
+    .inserir-title {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Large tablets/laptops */
+
+/*? ====== Laptops Médios: 992px a 1199px ====== */
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .titulo h1 {
+        font-size: 3em;
+        margin: 0.5em auto;
+    }
+
+    .titulo h6 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .telefoneWhatsapp {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .inserir-title {
+        font-size: 1.8em;
+        font-weight: 800;
+    }
+}
+
+/*? ====== Desktop Padrão: 1200px a 1919px ====== */
+
+
+@media (max-width: 1200px) {
+    .whatsapp-float {
+        right: 20px;
+    }
+}
+
+/* Desktop */
+
+/*? ====== Telas Muito Grandes: 1920px+ ====== */
+
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    
+}
+
+/* Extra large screens */
+
+@media (min-width: 1920px) {
+    
+}

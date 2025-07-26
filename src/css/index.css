@@ -1,0 +1,31 @@
+.index-title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.index-sub-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+ul {
+    
+}
+
+ul li:first-child {
+    padding: 0;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+}
+
+.index-list {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.index-paragrafo {
+    text-indent: 1em;
+    margin: 1em 0;
+    text-align: justify;
+}

@@ -1,0 +1,174 @@
+/* ! FORMULARIO */
+
+.contato {
+    width: 100%;
+    position: relative;
+}
+
+#contato-form {
+    padding: 2em;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #3482bd;
+    color: white;  
+    display: flex;
+    flex-direction: column;  
+}
+
+fieldset {
+    border: none;
+    text-align: center;
+}
+
+label {
+    font-size: 1.2em;
+    margin-right: 1em;
+    color: white;
+}
+
+#contato-form input, textarea {
+    width: 60%;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#contato-form input:focus, textarea:focus {
+    background-color: #bacddb;
+}
+
+.msg {
+    display: block;
+    margin-bottom: .5em;
+}
+
+#mensagem {
+    width: 70%;
+}
+
+.enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn-contato {
+    font-size: 1.2em;
+    background-color: #165d96;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: .5em;
+}
+
+.btn-contato:hover {
+    background-color: #0d47a1;
+    cursor: pointer;
+    transform: translate(0, -3px);
+}
+
+#mensagem-sucesso, #mensagem-erro {
+    width: 40%;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0a630a;
+    color: white;
+}
+
+#mensagem-erro {
+    background-color: #a10a0a;
+}
+
+.caixa-alerta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-alerta button {
+    background-color: #e0e422;
+    color: rgb(165, 23, 23);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: .5em;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+/* ! OUTROS CANAIS */
+
+/* ? EMAIL */
+
+.contato-email {
+    margin: 2em;
+    font-size: 1.2em;
+}
+
+/* ? WHATSAPP */
+
+.whats-contato {
+    display: flex;
+    flex-direction: row;
+    gap: .8em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.whats-contato .whatsapp-fone {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.whatsapp-fone {
+    padding: 0.1em 1em;
+    cursor: pointer;
+}
+
+.whatsapp-fone:hover {
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+    transform: scale(1.05);
+}
+
+.whats-contato .contato-botao-whats {
+    background-color: var(--whatsapp-color);
+    color: white;
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: .8em;
+    display: flex;
+    align-items: center;
+}
+
+.whats-contato img {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.6em;
+}
+
+.contato-botao-whats:hover {
+    background-color: var(--whatsapp-hover);
+    cursor: pointer;
+    transform: translate(0, -3px);
+}
+
+/* ? MOTIVOS PARA CONTATO */
+
+ul {
+    padding-left: 1.5rem;
+    margin-left: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.contato-table {
+    list-style: square;
+    margin-bottom: 0.5rem;
+}
