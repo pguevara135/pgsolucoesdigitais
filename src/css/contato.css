@@ -1,11 +1,12 @@
+/* ! FORMULARIO */
+
 .contato {
     width: 100%;
     position: relative;
-    outline: 2px solid saddlebrown;
 }
 
 #contato-form {
-    padding: 1em;
+    padding: 2em;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     background-color: #3482bd;
@@ -101,6 +102,46 @@ label {
     font-size: 1.2em;
     margin-top: 2em;
 }
+
+/* ! OUTROS CANAIS */
+
+/* ? EMAIL */
+
+.contato-email {
+    margin: 2em;
+    font-size: 1.2em;
+}
+
+/* ? WHATSAPP */
+
+.whats-contato {
+    display: flex;
+    flex-direction: row;
+    gap: .8em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.whats-contato .whatsapp-fone {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.whats-contato .contato-botao-whats {
+    background-color: #25d366;
+    font-size: 1em;
+    padding: .5em;
+    border-radius: .8em;
+    display: flex;
+    align-items: center;
+}
+
+.whats-contato img {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+/* ? MOTIVOS PARA CONTATO */
 
 ul {
     padding-left: 1.5rem;
