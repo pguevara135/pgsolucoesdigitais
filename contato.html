@@ -102,27 +102,45 @@
             <h2 class="pages-title">Formulário para contato</h2>
 
             
+            <div class="contato">
                 <form action="https://formspree.io/f/xqalqdoz" method="POST" id="contato-form">
                 
-                        <fieldset>
-                            <div class="nome">
-                                <label for="nome">Nome:</label>
-                                <input type="text" id="nome" name="nome" required>
-                            </div>
-                            <div class="email">
-                                <label for="email">E-mail:</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                            <label for="mensagem" class="msg">Mensagem</label>
-                            <textarea name="mensagem" id="mensagem" rows="10" required></textarea><br><br>
-                            <div class="enviar">
-                                <button type="submit" class="btn-contato">Enviar</button>
-                                <button type="reset" class="btn-contato">Limpar</button>
-                            </div>
-                        </fieldset>
-                    
+                    <fieldset>
+                        <div class="nome">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <label for="mensagem" class="msg">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="10" required></textarea><br><br>
+                        <div class="enviar">
+                            <button type="submit" class="btn-contato">Enviar</button>
+                            <button type="reset" class="btn-contato">Limpar</button>
+                        </div>
+                    </fieldset>
+                
                 </form>
-            <p id="resultado"></p>
+                
+                <!-- ! MENSAGEM ENVIADA COM SUCESSO -->
+                <div id="mensagem-sucesso" style="display: none;">
+                    <div class="caixa-alerta">
+                        <p>✅ Mensagem enviada com sucesso!</p>
+                        <button onclick="fecharMensagem('mensagem-sucesso')">OK</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ! MENSAGEM DE ERRO -->
+
+            <div id="mensagem-erro" style="display: none;">
+                <div class="caixa-alerta">
+                    <p>❌ Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.</p>
+                    <button onclick="fecharMensagem('mensagem-erro')">OK</button>
+                </div>
+            </div>
 
             <h2 class="pages-title">📱 Outros canais de contato</h2>
 

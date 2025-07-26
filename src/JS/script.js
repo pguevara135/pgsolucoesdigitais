@@ -31,9 +31,24 @@ document.getElementById("contato-form").addEventListener("submit", async functio
   const form = event.target;
   const dados = new FormData(form);
 
-  const resposta = await fetch.text();
-  document.getElementById("resultado").innerHTML = texto;
+  try {
+    const resposta = await fetch(form.action, {
+      method: "POST",
+      body: dados,
+      headers: {'Accept': 'application/json'}
+    });
 
-  formm.reset(); // Limpa o formulário após o envio
-
+    if (resposta.ok) {
+      document.getElementById("mensagem-sucesso").style.display = "block"; // Exibe a mensagem de sucesso
+      form.reset(); // Limpa o formulário
+    } else {
+      document.getElementById("mensagem-erro").style.display = "block"; // Exibe a mensagem de erro
+    }
+  } catch (erro) {
+    document.getElementById("mensagem-erro").style.display = "block"; // Exibe a mensagem de erro
+  }
 });
+
+function fecharMensagem(id) {
+  document.getElementById(id).style.display = "none"; // Esconde a mensagem
+}
