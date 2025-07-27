@@ -290,7 +290,7 @@ nav.menu a:hover {
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: var(--whatsapp-hover);
 }
 
 .btn_maior, .btn_maior a{
