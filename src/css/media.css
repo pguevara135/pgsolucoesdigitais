@@ -48,6 +48,36 @@
         margin-bottom: 0.5em;
     }
 
+    .nav-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        gap: 0;
+    }
+
+    .nav-menu a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .index-title {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .index-sub-title {
+        font-size: 0.8em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+
     .servicos {
         font-size: 1em;
         margin-bottom: 2em;
@@ -167,6 +197,32 @@
     .informe p {
         font-size: .6em;
         margin-bottom: 0.5em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+
+    .index-title {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .index-sub-title {
+        font-size: 0.8em;
+        font-weight: 600;
+        margin-bottom: 1em;
     }
 
     .contato-whatsapp {
@@ -300,6 +356,17 @@
     .inserir-title {
         font-size: 1.5em;
         font-weight: 700;
+    }
+
+    .index-title {
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    .index-sub-title {
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 1em;
     }
 
     .whatsapp-float img {
