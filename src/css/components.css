@@ -173,10 +173,26 @@ section {
     text-align: left;
 }
 
-nav.menu {
+/* ? CONFIGURACAO DO MENU */
+
+.menu {
+    width: 100%;
+    margin: 0;
+    background-color: var(--azul-fundo-menu);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+}
+
+
+.nav-menu {
     color: white;
-    background-color: #1976d2;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
     font-weight: bold;
     box-sizing: border-box;
     padding: 0.5em;
@@ -188,9 +204,10 @@ nav.menu a {
     color: white;
     padding: .5em;
     font-weight: bold;
+    outline: 2px solid wheat;
 }
 
-nav.menu a:hover {
+/* nav.menu a:hover {
     background-color: #0d47a1;
     padding: 0.8em;
     border-radius: .5em;
@@ -200,7 +217,7 @@ nav.menu a:hover {
     transform: scale(1);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     outline: 2px solid #1976d2;
-}
+} */
 
 .principal {
     margin-bottom: 2em;
