@@ -182,7 +182,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5em;
 }
 
 
@@ -201,12 +200,13 @@ section {
 nav.menu a {
     height: 100%;
     font-family: poppins, sans-serif;
+    font-size: 1.2em;
     color: white;
     padding: .5em;
     font-weight: bold;
 }
 
-/* nav.menu a:hover {
+nav.menu a:hover {
     background-color: #0d47a1;
     padding: 0.8em;
     border-radius: .5em;
@@ -215,8 +215,9 @@ nav.menu a {
     color: #f1f1f1;
     transform: scale(1);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
     outline: 2px solid #1976d2;
-} */
+}
 
 .principal {
     margin-bottom: 2em;
