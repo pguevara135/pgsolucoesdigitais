@@ -91,13 +91,21 @@
         
         </header>
         <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="sobre.html">Sobre Mim</a>
-            <a href="aulas.html">Aulas</a>
-            <a href="contato.html">Contato</a>
+            <ul class="nav-menu">
+                <li class="menu-link"><a href="index.html">Início</a></li>
+                <li class="menu-link"><a href="servicos.html">Serviços</a></li>
+                <li class="menu-link"><a href="sobre.html">Sobre Mim</a></li>
+                <li class="menu-link"><a href="aulas.html">Aulas</a></li>
+                <li class="menu-link visualisada"><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
+
+
+        <!-- ! INICIO DO CORPO -->
+
         <main class="principal">
+
+            <!-- ? FORMULARIO -->
 
             <h2 class="pages-title">Formulário para contato</h2>
 
@@ -125,6 +133,7 @@
                 </form>
                 
                 <!-- ! MENSAGEM ENVIADA COM SUCESSO -->
+
                 <div id="mensagem-sucesso" style="display: none;">
                     <div class="caixa-alerta">
                         <p>✅ Mensagem enviada com sucesso!</p>
@@ -142,6 +151,7 @@
                 </div>
             </div>
 
+            <!-- ? OUTROS CANAIS DE CONTATO -->
             
             <h2 class="pages-title">📱 Outros canais de contato</h2>
 
@@ -163,9 +173,11 @@
 
             <hr class="divisoria">
 
+            <!-- ? MOTIVOS PARA ENTRAR EM CONTATO -->
+
             <h3 class="sub-title">✨ Por que entrar em contato?</h3>
 
-            <ul>
+            <ul class="contato-table-ul">
                 <li class="contato-table">Atendimento humano, direto com o especialista</li>
                 <li class="contato-table">Flexibilidade para agendar aulas ou projetos</li>
                 <li class="contato-table">Respostas rápidas e orientação clara</li>

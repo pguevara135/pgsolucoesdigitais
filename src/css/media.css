@@ -39,15 +39,43 @@
         margin-bottom: 1em;
     }
 
+    .tech h2 {
+        line-height: 1.5;
+    }
+
     .informe p {
         font-size: 1em;
         margin-bottom: 0.5em;
     }
 
-    .menu a {
+    .nav-menu {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        gap: 0;
+    }
+
+    .nav-menu a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .index-title {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .index-sub-title {
+        font-size: 0.8em;
+        font-weight: 600;
+        margin-bottom: 1em;
     }
 
     .servicos {
@@ -59,10 +87,6 @@
         font-size: 1.2em;
     }
 
-    ul li {
-        padding: .3em;
-    }
-    
     .contato-whatsapp {
         font-size: 1em;
         flex-direction: column;
@@ -104,19 +128,30 @@
     font-size: 1.5rem;
     }
 
+    .whats-contato {
+        display: flex;
+        flex-direction: column;
+    }
+
     .email {
         font-size: .8em;
         font-weight: 500;
         margin: 1em auto;
     }
 
-    .rede-sociais {
-        font-size: .7em;
+    .redes-socias {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        font-size: 1em;
     }
 
-    .whatsapp-float img {
-        width: 30px;
-        height: 30px;
+    .whatsapp-float {
+        right: calc(100vw - 350px);
+        z-index: 999;
     }
 }
 
@@ -161,6 +196,11 @@
         font-size: 1.3em;
         margin-bottom: 1em;
     }
+
+    .tech h2 {
+        line-height: 1.5;
+    }
+
     .informe {
         padding: 0;
     }
@@ -168,6 +208,32 @@
     .informe p {
         font-size: .6em;
         margin-bottom: 0.5em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+
+    .index-title {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .index-sub-title {
+        font-size: 0.8em;
+        font-weight: 600;
+        margin-bottom: 1em;
     }
 
     .contato-whatsapp {
@@ -224,6 +290,11 @@
     font-size: 1.5rem;
     }
 
+    .whats-contato {
+        display: flex;
+        flex-direction: column;
+    }
+
     .whatsapp-float img {
         width: 30px;
         height: 30px;
@@ -276,7 +347,7 @@
     }
 
     .tech h2{
-        padding: 0 .5em;
+        line-height: 1.5;
     }
 
     .informe {
@@ -312,6 +383,17 @@
         font-weight: 700;
     }
 
+    .index-title {
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    .index-sub-title {
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+
     .whatsapp-float img {
         width: 30px;
         height: 30px;
@@ -332,6 +414,10 @@
     .titulo h6 {
         font-size: 1.5em;
         margin-bottom: 1em;
+    }
+
+    .tech h2 {
+        line-height: 1.4;
     }
 
     .telefoneWhatsapp {
