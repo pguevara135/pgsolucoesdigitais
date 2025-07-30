@@ -153,12 +153,6 @@
         right: calc(100vw - 350px);
         z-index: 999;
     }
-
-    .link-float {
-        /* width: 30px;
-        height: 30px; */
-    }
-
 }
 
 /* Extra small devices */
