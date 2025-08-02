@@ -239,10 +239,6 @@ nav.menu a:hover {
     font-weight: bolder;
 }
 
-#servicos, #sobre, #aulas, #contato {
-    padding: 0 1em;
-}
-
 #sobre {
     text-indent: 1em;
 }
@@ -275,7 +271,7 @@ nav.menu a:hover {
     justify-content: left;
 }
 
-/* ! BOTAO WHATSAPP SECAO CONTATO */
+/* ! BOTAO WHATSAPP SECCAO CONTATO */
 
 .cor-whatsapp {
     color: var(--whatsapp-color);
@@ -314,7 +310,7 @@ nav.menu a:hover {
     font-size: 2.2rem;
 }
 
-/* ! CONFIGURCAO EMAIL */
+/* ! CONFIGURACAO EMAIL */
 
 .email {
     margin-top: 1.2em;
@@ -335,10 +331,12 @@ nav.menu a:hover {
     border-radius: 0 0 10px 10px;
 }
 
-.redes-sociais {
+.redes-socias {
+    width: 100%;
     display: flex;
     color: white;
-    flex-direction: row;
+    flex-direction:column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1em;

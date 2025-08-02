@@ -4,7 +4,16 @@
 /* ? ===== Mobile: ate 530px ===== */
 
 @media (max-width: 530px) { /* 481*/
-   .cabecalho {
+   body {
+        padding: .5em;
+   }
+
+    .container {
+        box-sizing: border-box;
+        padding: .5em;
+   }
+   
+    .cabecalho {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -39,6 +48,10 @@
         margin-bottom: 1em;
     }
 
+    .sub-title {
+        font-size: 1em;
+    }
+
     .tech h2 {
         line-height: 1.5;
     }
@@ -68,7 +81,7 @@
     }
 
     .index-title {
-        font-size: 1em;
+        font-size: .95em;
         font-weight: 700;
     }
 
@@ -76,6 +89,10 @@
         font-size: 0.8em;
         font-weight: 600;
         margin-bottom: 1em;
+    }
+
+    #contato {
+        padding: 0;
     }
 
     .servicos {
@@ -131,6 +148,7 @@
     .whats-contato {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .email {
@@ -139,7 +157,7 @@
         margin: 1em auto;
     }
 
-    .redes-socias {
+    .redes-sociais {
         margin-top: 1em;
         display: flex;
         flex-direction: column;
@@ -152,6 +170,34 @@
     .whatsapp-float {
         right: calc(100vw - 350px);
         z-index: 999;
+    }
+
+    /* ! FORMULARIO */
+
+    #contato-form {
+        padding: .5em;
+    }
+
+    .display-form {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        width: 100%;
+        gap: 1em;
+    }
+
+    #contato-form input, #contato-form textarea {
+        width: 100%;
+        padding: .5em;
+        border: 1px solid #ccc;
+        border-radius: .5em;
+        font-size: 1em;
+    }
+
+    .contato-email {
+        font-size: .9em;
     }
 }
 
@@ -293,6 +339,7 @@
     .whats-contato {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .whatsapp-float img {

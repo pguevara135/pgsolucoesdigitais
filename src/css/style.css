@@ -164,10 +164,6 @@ nav.menu a:hover {
     font-weight: bolder;
 }
 
-#servicos, #sobre, #aulas, #contato {
-    padding: 0 1em;
-}
-
 #sobre {
     text-indent: 1em;
 }
@@ -242,16 +238,6 @@ nav.menu a:hover {
     font-size: 2.2rem;
 }
 
-.email {
-    margin-top: 1.2em;
-    color: #00325b;
-}
-
-.email a {
-    color: #0d47a1;
-    font-weight: bold;
-}
-
 .rodape {
     background-color: #0d47a1;
     color: white;
@@ -261,22 +247,12 @@ nav.menu a:hover {
     border-radius: 0 0 10px 10px;
 }
 
-.redes-sociais {
-    display: flex;
-    color: white;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    margin-top: 1em;
-}
-
 .sub-title {
     font-size: 1.2em;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
-.visualisada a {
+.visualizada a {
     background-color: var(--azul-hover);
 }
