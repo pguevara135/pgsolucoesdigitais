@@ -52,3 +52,16 @@ document.getElementById("contato-form").addEventListener("submit", async functio
 function fecharMensagem(id) {
   document.getElementById(id).style.display = "none"; // Esconde a mensagem
 }
+
+// ? COLOCAR O FOCO DO CURSOR NO CAMPO NOME
+
+const form =document.getElementById("contato-form");
+const campoNome = document.getElementById("nome");
+
+// Garnante que o campo de nome tenha o foco quando a página for carregada
+form .addEventListener("reset", () => {
+  // Define um pequeno atraso para garantir que o campo esteja visível
+  setTimeout(() => {
+    campoNome.focus();
+  }, 0)
+})

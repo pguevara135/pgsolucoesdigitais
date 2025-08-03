@@ -4,20 +4,16 @@
 /* ? ===== Mobile: ate 530px ===== */
 
 @media (max-width: 530px) { /* 481*/
-   body {
-        padding: .5em;
-   }
-
+   
     .container {
         box-sizing: border-box;
         padding: .5em;
    }
    
-    .cabecalho {
+    .conteudo-cabecalho {
         text-align: center;
         display: flex;
         flex-direction: column;
-        border-radius: 10px 10px 0 0;
     }
 
     .logo {
@@ -209,7 +205,8 @@
     .top {
         margin: 1em;
     }
-    .cabecalho {
+
+    .conteudo-cabecalho {
         text-align: center;
         padding-top: 1.5em;
         display: flex;
@@ -296,7 +293,6 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        outline: 2px solid darkgoldenrod;
     }
 
     .telefoneWhatsapp {
@@ -353,7 +349,7 @@
 /*? ====== Tablets Médios: 768px a 991px ====== */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .cabecalho {
+    .conteudo-cabecalho {
         width: 100%;
         text-align: center;
         display: grid;
@@ -371,10 +367,11 @@
     .logo {
         width: 100%;
         height: 100%;
+        padding-left: .5em;
         grid-area: logo;
     }
 
-    .logo h2 {
+    .tech h2 {
         font-size: 1.2em;
     }
 
@@ -391,10 +388,6 @@
     .titulo h6 {
         font-size: 1.5em;
         margin-bottom: 1em;
-    }
-
-    .tech h2{
-        line-height: 1.5;
     }
 
     .informe {

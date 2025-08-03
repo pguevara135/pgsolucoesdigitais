@@ -32,14 +32,8 @@
     border-radius: 1em;
 }
 
-/* .link-float span:hover {
-    background-color: var(--whatsapp-hover);
-    transform: scale(1.1);
-    transition: transform 0.3s ease;} */
-
 .whatsapp-float i {
     color: var(--whatsapp-color);
-    /* border-radius: 50%; */
     transition: transform 0.3s ease;
 }
 
@@ -76,8 +70,7 @@ section {
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    padding: 2em;
-    background-color: #f6f4ed;
+    padding: 1em;
     border-radius: 1rem;
     position: relative;
 }
@@ -85,11 +78,20 @@ section {
 /* ? Header do site */
 
 .cabecalho {
-    background-color: #0d47a1;
+    width: 100%;
+    background-color: var(--azul-divisoria);
+    text-align: center;
     color: white;
     padding: .8em;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-cabecalho {
+    max-width: 1200px;
+    padding-top: 1.2em;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -99,6 +101,7 @@ section {
         "tech contatowp qrcode";
     justify-content: center;
     align-items: center;
+    border-radius: 10px 10px 0 0;
 }
 
 .logo{
@@ -177,21 +180,20 @@ section {
 
 .menu {
     width: 100%;
+    color: var(--text-wite);
     margin: 0;
-    background-color: var(--azul-fundo-menu);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
 .nav-menu {
-    color: white;
+    color: var(--text-wite);
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 1.2em;
     font-weight: bold;
     box-sizing: border-box;
     padding: 0.5em;
@@ -201,26 +203,36 @@ nav.menu a {
     height: 100%;
     font-family: poppins, sans-serif;
     font-size: 1.2em;
-    color: white;
+    color: var(--text-wite);
     padding: .5em;
     font-weight: bold;
 }
 
 nav.menu a:hover {
-    background-color: #0d47a1;
+    background-color: var(--azul-escuro);
     padding: 0.8em;
     border-radius: .5em;
     text-decoration: underline;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    transform: scale(1);
+    transform: scale(1.2);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     transition: 0.2s ease;
     outline: 2px solid #1976d2;
 }
 
+/* ? INICIO DO CORPO */
+
 .principal {
     margin-bottom: 2em;
+    padding: 0 .5em;
+}
+
+.pages-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 .inserir {
@@ -259,7 +271,6 @@ nav.menu a:hover {
 
 #contato {
     color: #0d47a1;
-    padding: 1em;
     border-radius: 10px;
 }
 
@@ -323,13 +334,19 @@ nav.menu a:hover {
 }
 
 .rodape {
-    background-color: #0d47a1;
-    color: white;
+    background-color: var(--azul-divisoria);
+    color: var(--text-wite);
     text-align: center;
     padding: 1em;
     font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
 }
+
+.conteudo-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
 
 .redes-socias {
     width: 100%;

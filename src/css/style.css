@@ -13,10 +13,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    background-color: var(--azul-claro);
-    /* color: #00325b; */
-    color: var(--azul-principal);
-    padding: 1em;
 }
 
 h1 {
@@ -68,7 +64,7 @@ h2 {
 
 .divisoria {
     width: 100%;
-    border: 2px solid var(--azul-divisoria);
+    border: 2px solid var(--azul-fundo-menu);
     margin: 1em 0;
 }
 
@@ -118,36 +114,6 @@ h2 {
     font-weight: 500;
 }
 
-nav.menu {
-    color: white;
-    background-color: #1976d2;
-    text-align: center;
-    font-weight: bold;
-    box-sizing: border-box;
-    padding: 0.5em;
-}
-
-nav.menu a {
-    height: 100%;
-    font-family: poppins, sans-serif;
-    color: white;
-    padding: 1em;
-    font-weight: bold;
-}
-
-nav.menu a:hover {
-    background-color: #0d47a1;
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: white;
-    transform: scale(1.2);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.principal {
-    margin-bottom: 2em;
-}
-
 .inserir {
     width: 100%;
     text-align: center;
@@ -184,8 +150,6 @@ nav.menu a:hover {
 
 #contato {
     color: #0d47a1;
-    padding: 1em;
-    border-radius: 10px;
 }
 
 #aulas > .contato-whatsapp {
@@ -236,15 +200,6 @@ nav.menu a:hover {
 
 .btn_maior, .btn_maior a{
     font-size: 2.2rem;
-}
-
-.rodape {
-    background-color: #0d47a1;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
 }
 
 .sub-title {

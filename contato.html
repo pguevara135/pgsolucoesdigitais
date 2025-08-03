@@ -54,51 +54,55 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <header class="cabecalho" id="topo">
-            <div class="logo">
-                <img src="src/imagem/logo_200.png" alt="Logo da PG Soluções Digitais" class="banner">
+
+    <header class="cabecalho" id="topo">
+            <div class="conteudo-cabecalho">
+                <div class="logo">
+                    <img src="src/imagem/logo_200.png" alt="Logo da PG Soluções Digitais" class="banner">
                 
-            </div>
-            
-            <div class="titulo">
-                <h1>PG - Soluções Digitais</h1>
-            </div>
-
-            <div class="tech">
-                <h2>Tecnologia acessível com carinho</h2>
-            </div>
-
-            <div class="informe">
-                <p>Suporte Técnico | Planilhas Inteligentes | Aulas de Informática.</p>
-                <p class="solucoes">Soluções simples e eficientes para o seu dia a dia digital</p>
-            </div>
-            
-            <div class="contato-whatsapp">
-                <div class="telefoneWhatsapp">
-                    <p>📞 (19) 9 9352 - 4116</p>
-                    <a href="https://wa.me/5519993524116" target="_blank" class="botao-whats">
-                        <img src="src/imagem/whats1.png" alt="icone do WhatsApp">
-                        <p class="btn-media">Converse comigo pelo WhatsApp!</p>
-                    </a>
                 </div>
-                    
-            </div>
+
+                <!--? TITULO  -->
+                
+                <div class="titulo">
+                    <h1>PG - Soluções Digitais</h1>
+                </div>
+                <div class="tech">
+                    <h2>Tecnologia acessível com carinho</h2>
+                </div>
+                <div class="informe">
+                    <p>Suporte Técnico | Planilhas Inteligentes | Aulas de Informática.</p>
+                    <p class="solucoes">Soluções simples e eficientes para o seu dia a dia digital</p>
+                </div>
+                
+                <!-- ? WHATSAPP -->
+                <div class="contato-whatsapp">
+                    <div class="telefoneWhatsapp">
+                        <p>📞 (19) 9 9352 - 4116</p>
+                        <a href="https://wa.me/5519993524116" target="_blank" class="botao-whats">
+                            <img src="src/imagem/whats1.png" alt="icone do WhatsApp">
+                            <p class="btn-media">Converse comigo pelo WhatsApp!</p>
+                        </a>
+                    </div>
+                
+                </div>
                 <div class="qrcode">
                     <img src="src/imagem/qrcode (1).png" alt="qrcode para contato no WhatsApp" class="qrcode-img">
                     <p class="acessoqrcode">Acesse o WhatsApp pelo seu celular</p>
                 </div>
-        
+            </div>
+            <nav class="menu">
+                <ul class="nav-menu">
+                    <li class="menu-link"><a href="index.html">Início</a></li>
+                    <li class="menu-link"><a href="servicos.html">Serviços</a></li>
+                    <li class="menu-link"><a href="sobre.html">Sobre Mim</a></li>
+                    <li class="menu-link"><a href="aulas.html">Aulas</a></li>
+                    <li class="menu-link visualizada"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav class="menu">
-            <ul class="nav-menu">
-                <li class="menu-link"><a href="index.html">Início</a></li>
-                <li class="menu-link"><a href="servicos.html">Serviços</a></li>
-                <li class="menu-link"><a href="sobre.html">Sobre Mim</a></li>
-                <li class="menu-link"><a href="aulas.html">Aulas</a></li>
-                <li class="menu-link visualizada"><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <div class="container">
+        
 
 
         <!-- ! INICIO DO CORPO -->
@@ -116,11 +120,11 @@
                     <fieldset>
                         <div class="nome display-form">
                             <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" required>
+                            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" autofocus>
                         </div>
                         <div class="email display-form">
                             <label for="email">E-mail:</label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
                         </div>
                         <label for="mensagem" class="msg">Mensagem</label>
                         <textarea name="mensagem" id="mensagem" rows="10" required></textarea><br><br>
@@ -140,28 +144,28 @@
                         <button onclick="fecharMensagem('mensagem-sucesso')">OK</button>
                     </div>
                 </div>
-            </div>
 
-            <!-- ! MENSAGEM DE ERRO -->
+                <!-- ! MENSAGEM DE ERRO -->
 
-            <div id="mensagem-erro" style="display: none;">
-                <div class="caixa-alerta">
-                    <p>❌ Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.</p>
-                    <button onclick="fecharMensagem('mensagem-erro')">OK</button>
+                <div id="mensagem-erro" style="display: none;">
+                    <div class="caixa-alerta">
+                        <p>❌ Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.</p>
+                        <button onclick="fecharMensagem('mensagem-erro')">OK</button>
+                    </div>
                 </div>
             </div>
 
+            
+
             <!-- ? OUTROS CANAIS DE CONTATO -->
             
-            <hr class="divisoria">
-
+            
             <h2 class="pages-title">📱 Outros canais de contato</h2>
 
             <div class="contato-email">
                 <a href="mailto:contato@pgsolucoesdigitais.com.br">📧  contato@pgsolucoesdigitais.com.br</a>
             </div>
 
-            <hr class="divisoria">
             
             <div class="btn_maior whats-contato">
                 <a href="https://wa.me/5511993524116" target="_blank" class="whatsapp-fone">📞 WhatsApp:</a> 
@@ -194,30 +198,34 @@
                 </a>
             </div>
         </main>
-        <footer class="rodape">
-            <p>&copy; 2025 Paulo Guevara - Todos os direitos reservados</p>
-            <div class="redes-socias">
-                <p class="redes-sociais-siga">Siga-me nas redes sociais:
-                
-                    <div class="linkedin">
-                        <i class="fab fa-linkedin rede-social">
-                            <a href="https://www.linkedin.com/in/paulo-guevara" target="_blank">LinkedIn</a>
-                        </i>
-                    </div>
-                    <div class="github">
-                        <i class="fab fa-github rede-social">
-                            <a href="https://github.com/pguevara135" target="_blank" class="github">GitHub</a>
-                        </i>
-                    </div>
-                </p>
-            </div>
-        </footer>
+        
         <div id="cookieBanner">
             <p>Este site <strong>não utiliza cookies</strong></p>
             <button id="fechar-btn">Fechar</button>
         </div>
         
     </div>
+
+    <footer class="rodape">
+            <div class="conteudo-rodape">
+                <p>&copy; 2025 Paulo Guevara - Todos os direitos reservados</p>
+                <div class="redes-socias">
+                    <p class="redes-sociais-siga">Siga-me nas redes sociais:
+                
+                        <div class="linkedin">
+                            <i class="fab fa-linkedin rede-social">
+                                <a href="https://www.linkedin.com/in/paulo-guevara" target="_blank">LinkedIn</a>
+                            </i>
+                        </div>
+                        <div class="github">
+                            <i class="fab fa-github rede-social">
+                                <a href="https://github.com/pguevara135" target="_blank" class="github">GitHub</a>
+                            </i>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </footer>
 
     
     <script src="src/JS/script.js"></script>
